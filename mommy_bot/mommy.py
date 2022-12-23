@@ -1,16 +1,17 @@
 #import 
-import asyncio
-import logging
-import config
-from aiogram import Bot, Dispatcher, types, executor
+from logging import basicConfig, INFO 
 from random import choice
 
+from aiogram import Bot, Dispatcher, types, executor
+from config import TOKEN
+
+
 #loging 
-logging.basicConfig(level=logging.INFO)
+basicConfig(level=INFO)
 
 
 #unpacking file and path to file
-path_facts = r"C:\mom\my_mommy.txt"
+path_facts = r"C:\git_puch\mommy_bot1\my_mommy.txt"
 
 facts_open = open(path_facts, 'r', encoding='UTF-8')
 facts = facts_open.read().split('\n')
@@ -18,7 +19,7 @@ facts_open.close()
 
 
 #API 
-bot = Bot(token=config.TOKEN)
+bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
 
