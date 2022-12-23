@@ -11,7 +11,7 @@ basicConfig(level=INFO)
 
 
 #unpacking file and path to file
-path_facts = r"C:\git_puch\mommy_bot1\my_mommy.txt"
+path_facts = r"C:\mommy_bot1\my_mommy.txt"
 
 facts_open = open(path_facts, 'r', encoding='UTF-8')
 facts = facts_open.read().split('\n')
