@@ -1,6 +1,6 @@
 # mommy
 <p align="center">
-      <img src="https://i.ibb.co/nRMvQDx/heart.png" width="500">
+      <img src="https://i.ibb.co/nRMvQDx/heart.png" width="350">
 </p>
 <p align="center">
    <img src="" alt="fastapi">
