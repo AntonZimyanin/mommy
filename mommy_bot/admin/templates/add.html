@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="{{ url_for('static', path='css/css1.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='css/css2.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='css/css3.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='css/style.css') }}" rel="stylesheet">
+    <title>admin-panel</title>
+</head>
+
+<body class="style-salebot-minilanding salebot-landing moder_style_body vsc-initialized">
+    <div class="block salebot-landing__container salebot_cover_style_basic">
+        <div class="salebot-landing__container-top">
+            <div class="salebot-landing__img"><img
+                    src="{{ url_for('static', path='images\\1.jpg')}}">
+            </div>
+            <h2 class="salebot-landing__title">
+                <p style="text-align:center;"><span style="color:hsl(90,75%,60%);"> Добавить факт о маме⤵️</span></p>
+            </h2>
+        </div>
+        <div class="salebot-landing__inner">
+            <div class="description salebot-landing__description"></div>
+            <div class="salebot-form__container">
+                <div class="minilanding__quiz-box">
+                    <div class="ml_quiz">
+                        <div class="ml_quiz_important hidden"></div>
+                        <div class="ml_quiz_variable hidden"></div>
+                        <div class="ml_quiz_type hidden">Факт</div>
+                        <div class="ml_quiz_question ml-quiz-required--"></div>
+                        <div class="ml_quiz_answers_container">
+                            <div class="minilanding-inputs-box minilanding__old-style">
+                                <form class="form-control" action="{{ url_for('add') }}" method="post" id=""
+                                    novalidate="">
+                                    <div class="row justify-content-center">
+                                        <div class="salebot-label">Факт</div>
+                                        <br>
+                                        <div class="wh-form-field"><input
+                                                class="form-control"
+                                                name="content"
+                                                placeholder="Факт" required="" type="text">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
