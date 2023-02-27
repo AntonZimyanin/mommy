@@ -2,13 +2,6 @@
 <p align="center">
       <img src="https://i.ibb.co/nRMvQDx/heart.png" width="350">
 </p>
-<p align="center">
-   <img src="" alt="fastapi">
-   <img src="" alt="SQL">
-   <img src="" alt="sqlalchemy">
-   <img src="" alt="html & CSS">
-</p>
-
 
 <h1 align="center">Hi, I'm Anton</h1>
 
