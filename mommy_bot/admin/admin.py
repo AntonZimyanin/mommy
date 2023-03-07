@@ -26,7 +26,6 @@ def add(content: str = Form(...)):
         new_fact = FactOrm(content=content)
         db.add(new_fact)
         db.commit()
-        #url = app.url_path_for("/")
         return RedirectResponse(url="/", status_code=HTTP_303_SEE_OTHER)
     except:
         raise HTTPException(status_code=500)
